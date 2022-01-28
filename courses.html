@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Illusion" />
+    <meta
+      name="keywords"
+      content="news, dev, bitcoin, crypto, cryptocoin, developer, programmer, usa"
+    />
+    <meta name="description" content="Fred's personal web page" />
+    <!-- description gives the info to search engines about the content of the Web Site -->
+    <meta http-equiv="refresh" content="911" />
+    <meta name="application-name" content="illusion" />
+    <meta name="generator" content="error |911" />
+
+    <!-- title -->
+    <title>F R E D</title>
+
+    <!-- bootsrtap 5.1.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jquery  lightSlider (befire external css)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"
+    />
+
+    <!-- external  stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="pictures/Angular_icon.ico" type="image/x-icon" />
+
+    <!-- font face -->
+    <style>
+      @font-face {
+        font-family: Gilroy-Regular;
+        src: url(fonts/Gilroy-Regular.ttf);
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top myNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><h3 class="myColoredText">F R E D</h3></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="economy.html"
+                >World Economy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="realEstate.html">USA</a>
+            </li>
+            <li class="nav-item">
+              <a href="insurance.html" class="nav-link">Useful Videos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="cryptocurrency.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blockchain
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="cryptocurrency.html"
+                    >Bitcoin</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cryptocurrency.html"
+                    >Ethereum</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Coins & Tokens News</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Soon...</a>
+            </li>
+          </ul>
+
+          <!-- ms-1 mb-1 me-1 are for mobile view -->
+          <!-- search and its button -->
+          <form class="d-flex mb-1 ms-1 me-1">
+            <input
+              type="search"
+              class="form-control form-control-sm"
+              placeholder="Search..."
+              aria-label="Search"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-success btn-sm ms-1 ms-1 me-1"
+              type="button"
+              id="button-addon2"
+            >
+              <i class="bi bi-google"></i>
+            </button>
+          </form>
+
+          <!-- sign in -->
+          <div class="gap-2 d-grid mb-1 ms-1 me-1">
+            <a
+              href="#"
+              class="btn btn-success btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#signIn"
+              >Sign in</a
+            >
+          </div>
+
+          <!-- sign up -->
+          <div class="d-grid gap-2 mb-1 ms-1 me-1">
+            <a
+              href="#"
+              class="btn btn-primary btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#signUp"
+              >Sign up</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-8">
+            <div class="header-text-holder">
+              <h1>Latest tech news and more</h1>
+              <p>
+                What happens in the
+                <strong class="myColoredText">Crypto World</strong>!
+              </p>
+              <!-- this p tag ain't fit into col-lg-8  learn why ?!-->
+              <!-- <p>
+                jsndklsndkldjmakldnamkldnakdlj.sandkl.,mdlksmdsndklsndkldjmakldnamkldnakdlj.sandkl.,mdlksmdlskadmlskadmsndklsndkldjmakldnamkldnakdlj.sandkl.,mdlksmdlskadm
+              </p> -->
+            </div>
+            <div class="text-center">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#subscribe"
+                class="btn btn-success"
+                >Subscribe for updates</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- !important notes -->
+
+        <!-- <div class="d-lg-none">hide on lg and wider screens</div>
+        <div class="d-none d-lg-block">hide on screens smaller than lg</div> -->
+
+        <!-- d-none and d-sm-block Hidden only on xs -->
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-6 d-none d-sm-block">
+            <div class="input-group mt-3">
+              <input
+                type="search"
+                class="form-control form-control-sm rounded-pill mySearch"
+                placeholder="D U N E"
+                aria-labelledby="D U N E."
+                aria-label="D U N E"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-success rounded-pill ms-1"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="bi bi-google"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--  below is for test and created visible only xs -->
+
+        <!-- sign in button -->
+
+        <!-- <div class="row justify-content-center">
+          <div class="col-lg-12 col-md-12">
+            
+            <div class="d-block d-sm-none text-center mt-2">
+              <a
+                href="#"
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#signIn"
+                >Sign in</a
+              >
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </header>
+
+    <!-- online courses section -->
+    <section class="online-courses">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-6">
+            <div class="online-courses-divider">
+              <i class="bi bi-journal-text fs-3 text-secondary"></i>
+              <h3>Online courses</h3>
+              <div class="online-course-divider-line"></div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's ...
+              </p>
+              <button class="btn btn-secondary btn-sm" type="button">
+                View all courses
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- if there is a card-header ain't add header picture, if not add picture into card class directly -->
+        <div class="row">
+          <div class="col-lg-3 col-md-3 mb-2 mt-2 text-center">
+            <div class="card online-course-card-shadow">
+              <img
+                src="https://source.unsplash.com/random/"
+                alt="Card picture"
+                class="online-course-card-pic img-fluid rounded"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Course name</h3>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="btn btn-success me-3">Add to card</button>
+                <button class="rounded-pill btn-outline-danger">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 mb-2 mt-2 text-center">
+            <div class="card online-course-card-shadow">
+              <img
+                src="https://source.unsplash.com/random/"
+                alt="Card picture"
+                class="online-course-card-pic img-fluid rounded"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Course name</h3>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="btn btn-success me-3">Add to card</button>
+                <button class="rounded-pill btn-outline-danger">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 mb-2 mt-2 text-center">
+            <div class="card online-course-card-shadow">
+              <img
+                src="https://source.unsplash.com/random/"
+                alt="Card picture"
+                class="online-course-card-pic img-fluid rounded"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Course name</h3>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="btn btn-success me-3">Add to card</button>
+                <button class="rounded-pill btn-outline-danger">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 mb-2 mt-2 text-center">
+            <div class="card online-course-card-shadow">
+              <img
+                src="https://source.unsplash.com/random/"
+                alt="Card picture"
+                class="online-course-card-pic img-fluid rounded"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Course name</h3>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="btn btn-success me-3">Add to card</button>
+                <button class="rounded-pill btn-outline-danger">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 mb-2 mt-2 text-center">
+            <div class="card online-course-card-shadow">
+              <img
+                src="https://source.unsplash.com/random/"
+                alt="Card picture"
+                class="online-course-card-pic img-fluid rounded"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Course name</h3>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="btn btn-success me-3">Add to card</button>
+                <button class="rounded-pill btn-outline-danger">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 mb-2 mt-2 text-center">
+            <div class="card online-course-card-shadow">
+              <img
+                src="https://source.unsplash.com/random/"
+                alt="Card picture"
+                class="online-course-card-pic img-fluid rounded"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Course name</h3>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="btn btn-success me-3">Add to card</button>
+                <button class="rounded-pill btn-outline-danger">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 mb-2 mt-2 text-center">
+            <div class="card online-course-card-shadow">
+              <img
+                src="https://source.unsplash.com/random/"
+                alt="Card picture"
+                class="online-course-card-pic img-fluid rounded"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Course name</h3>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="btn btn-success me-3">Add to card</button>
+                <button class="rounded-pill btn-outline-danger">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 mb-2 mt-2 text-center">
+            <div class="card online-course-card-shadow">
+              <img
+                src="https://source.unsplash.com/random/"
+                alt="Card picture"
+                class="online-course-card-pic img-fluid rounded"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Course name</h3>
+                <p class="card-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="btn btn-success me-3">Add to card</button>
+                <button class="rounded-pill btn-outline-danger">
+                  <i class="bi bi-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- online training course (not a card)-->
+    <section class="online-training-courses">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-6">
+            <div class="online-training-courses-divider">
+              <i class="bi bi-journal-text fs-3 text-dark"></i>
+              <h3>Online training courses</h3>
+              <div class="online-training-courses-divider-line"></div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's ...
+              </p>
+              <button class="btn btn-dark">View all training courses</button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <div class="card mb-3 bg-info text-dark">
+                <div class="card-header text-center">
+                  <h3>
+                    Special for <strong class="text-light">Newbies</strong>
+                  </h3>
+                  <div class="card-body">
+                    <h5 class="card-title">Sign up to get more details</h5>
+                    <p class="card-text text-muted">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <form action="">
+                      <div class="mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Your name"
+                          required
+                        />
+                      </div>
+                      <div class="mb-2">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Your email"
+                          required
+                        />
+                      </div>
+                      <div class="mb-2">
+                        <input
+                          type="tel"
+                          class="form-control"
+                          placeholder="Your number"
+                          required
+                        />
+                      </div>
+                      <div class="mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Course name"
+                          required
+                        />
+                      </div>
+                      <div class="mb-2 d-grid gap-2">
+                        <input
+                          type="submit"
+                          class="btn btn-dark"
+                          value="Register online now"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8">
+              <ul class="list-group">
+                <li class="list-group-item bg-info text-dark mb-2">
+                  Classrom training courses |Career based |Short term
+                </li>
+                <li class="list-group-item mb-2 rounded">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                      <div class="card">
+                        <img
+                          src="https://source.unsplash.com/random/"
+                          alt="Card picture"
+                          class="online-training-course-card-pic img-fluid rounded"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                      <!-- to prevent hacking my content i've to add rel(relatiionship) -->
+                      <a
+                        href="https://www.udemy.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="online-training-courses-link"
+                        >Online training course header</a
+                      >
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's ...
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item mb-2 rounded">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                      <div class="card">
+                        <img
+                          src="https://source.unsplash.com/random/"
+                          alt="Card picture"
+                          class="online-training-course-card-pic img-fluid rounded"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                      <!-- to prevent hacking my content i've to add rel(relatiionship) -->
+                      <a
+                        href="https://www.udemy.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="online-training-courses-link"
+                        >Online training course header</a
+                      >
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's ...
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item mb-2 rounded">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                      <div class="card">
+                        <img
+                          src="https://source.unsplash.com/random/"
+                          alt="Card picture"
+                          class="online-training-course-card-pic img-fluid rounded"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                      <!-- to prevent hacking my content i've to add rel(relatiionship) -->
+                      <a
+                        href="https://www.udemy.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="online-training-courses-link"
+                        >Online training course header</a
+                      >
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's ...
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item mb-2 rounded">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                      <div class="card">
+                        <img
+                          src="https://source.unsplash.com/random/"
+                          alt="Card picture"
+                          class="online-training-course-card-pic img-fluid rounded"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                      <!-- to prevent hacking my content i've to add rel(relatiionship) -->
+                      <a
+                        href="https://www.udemy.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="online-training-courses-link"
+                        >Online training course header</a
+                      >
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's ...
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section -->
+    <section class="review">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-6">
+            <div class="review-divider">
+              <i class="bi bi-chat-square-dots fs-3"></i>
+              <h3>What do people say about us ?!</h3>
+              <div class="review-divider-line"></div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's ...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="review-holder">
+              <ul id="review-content">
+                <li>
+                  <div class="card">
+                    <img
+                      src="./pictures/man.png"
+                      alt="username icon"
+                      class="review-username-icon m-auto"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title"><strong>username</strong></h3>
+
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-half fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text...
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <img
+                      src="./pictures/man.png"
+                      alt="username icon"
+                      class="review-username-icon m-auto"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title"><strong>username</strong></h3>
+
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text...
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <img
+                      src="./pictures/man.png"
+                      alt="username icon"
+                      class="review-username-icon m-auto"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title"><strong>username</strong></h3>
+
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-half fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text...
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <img
+                      src="./pictures/man.png"
+                      alt="username icon"
+                      class="review-username-icon m-auto"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title"><strong>username</strong></h3>
+
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-half fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text...
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <img
+                      src="./pictures/man.png"
+                      alt="username icon"
+                      class="review-username-icon m-auto"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title"><strong>username</strong></h3>
+
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-half fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text...
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <img
+                      src="./pictures/man.png"
+                      alt="username icon"
+                      class="review-username-icon m-auto"
+                    />
+                    <div class="card-body">
+                      <h3 class="card-title"><strong>username</strong></h3>
+
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <i
+                        class="bi bi-star-fill fs-3"
+                        style="color: #ffff00"
+                      ></i>
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text...
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <aside class="footer-links">
+              <ul>
+                <li><h3 class="bottom-headings">Follow us</h3></li>
+                <li>
+                  <i class="bi bi-meta text-primary"></i>
+                  <a
+                    href="https://www.facebook.com/fredkydd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="bi bi-instagram"
+                    style="
+                      background: linear-gradient(to right, #ffcca2, #b388e2);
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                      -webkit-background-clip: text;
+                    "
+                  ></i>
+                  <a
+                    href="https://www.instagram.com/fredkydd.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-linkedin text-primary"></i>
+                  <a
+                    href="https://www.linkedin.com/in/fredkydd/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-github"></i>
+                  <a
+                    href="https://github.com/fredkydd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Github</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-reddit text-danger"></i>
+                  <a
+                    href="https://www.reddit.com/user/iamfredkydd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Reddit</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <aside class="footer-links">
+              <ul>
+                <li>
+                  <h3 class="bottom-headings">Site map</h3>
+                </li>
+                <li>
+                  <i class="bi bi-house text-success"></i
+                  ><a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-info-circle text-success"></i
+                  ><a href="about.html">About</a>
+                </li>
+                <li>
+                  <i class="bi bi-journals text-success"></i
+                  ><a href="courses.html">Courses</a>
+                </li>
+                <li>
+                  <i class="bi bi-person-workspace text-success"></i
+                  ><a href="contact.html">Contact</a>
+                </li>
+                <li>
+                  <i class="bi bi-question-circle text-success"></i
+                  ><a href="#">Support</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <aside class="footer-links">
+              <ul>
+                <li>
+                  <h3 class="bottom-headings">Recent updates</h3>
+                </li>
+                <li><a href="#">2022</a></li>
+                <li><a href="#">2021</a></li>
+                <li><a href="#">2020</a></li>
+                <li><a href="#">2019</a></li>
+                <li><a href="#">2018</a></li>
+              </ul>
+            </aside>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <aside class="footer-links">
+              <address>
+                <h2 class="bottom-headings">
+                  I L L U S I <i class="bi bi-eye"></i> N
+                </h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+
+                <p>
+                  <i class="bi bi-envelope-exclamation text-info"></i>
+                  <strong
+                    ><a href="mailto:mr.developerfred@gmail.com"
+                      >Email</a
+                    ></strong
+                  >
+                </p>
+                <p>
+                  <i class="bi bi-phone-vibrate text-info"></i>
+                  <strong><a href="tel:+994775000530">Phone</a></strong>
+                </p>
+              </address>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- copyright section -->
+    <section class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="copyright-text">
+              Copyright &copy; 2022. All rights reserved. I L L U S I
+              <i class="bi bi-eye"></i> N Company
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- static sign in modal -->
+    <!-- When backdrop is set to static, the modal will not close when clicking outside it. Click the button below to try it. -->
+    <div
+      class="modal fade"
+      id="signIn"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Welcome! Please sign in
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="myDivider"></div>
+          <div class="modal-body">
+            <form action="">
+              <div class="mb-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  style="background-color: #e3f2fd"
+                  placeholder="email"
+                  required
+                />
+              </div>
+              <div class="mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  style="background-color: #e3f2fd"
+                  placeholder="password"
+                  required
+                />
+              </div>
+              <div class="mb-2 d-grid gap-2">
+                <input type="submit" class="btn btn-success" value="Sign in" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- static sign up modal -->
+    <div
+      class="modal fade"
+      id="signUp"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Welcome! Please sign up
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="myDivider"></div>
+          <div class="modal-body">
+            <form action="">
+              <div class="mb-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  style="background-color: #e3f2fd"
+                  placeholder="email"
+                  required
+                />
+              </div>
+              <div class="mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  style="background-color: #e3f2fd"
+                  placeholder="password"
+                  required
+                />
+              </div>
+              <div class="mb-2 d-grid gap-2">
+                <input type="submit" class="btn btn-primary" value="Sign Up" />
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- live & dynamic subscribe modal -->
+    <div
+      class="modal fade"
+      id="subscribe"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Subscribe for newslatters
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="myDivider"></div>
+          <div class="modal-body">
+            <form action="">
+              <div class="mb-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  style="background-color: #e3f2fd"
+                  placeholder="add your email"
+                  required
+                />
+              </div>
+              <div class="mb-2 d-grid gap-2">
+                <input type="submit" class="btn btn-success" value="submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery for slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- with bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- lightSlider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+
+    <!-- call lightSlider -->
+    <script>
+      $(document).ready(function () {
+        $("#review-content").lightSlider({
+          auto: true,
+          loop: true,
+          responsive: [
+            {
+              breakpoint: 800,
+              settings: {
+                item: 3,
+                slideMove: 1,
+                slideMargin: 6,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                item: 1,
+                slideMove: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>

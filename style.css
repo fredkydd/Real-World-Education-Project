@@ -1,0 +1,268 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* section sttle is for thick white line between the two sections tag */
+section {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", "Gilroy-Regular", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/***** Pop-up screen *****/
+.myDivider {
+  height: 0.0625rem;
+  background-image: linear-gradient(
+    to right,
+    #55c57a,
+    #673ab7,
+    #ffff00,
+    #f44336,
+    #9e9e9e,
+    #663399
+  );
+}
+
+/***** Nav section *****/
+.myNav {
+  background-color: rgba(227, 242, 253, 0.5);
+  backdrop-filter: blur(0.4rem);
+  box-shadow: 0rem 0.125rem 128px rgba(0, 0, 0.3);
+}
+
+/* for colored text */
+.myColoredText {
+  background: linear-gradient(to right, #ffcca2, #b388e2);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+ul.dropdown-menu {
+  background-color: rgba(227, 242, 253, 0.5);
+  backdrop-filter: blur(0.4rem);
+  box-shadow: 0rem 0.125rem 128px rgba(0, 0, 0.3);
+}
+
+/***** Header section *****/
+.main-header {
+  background-image: url(./pictures/1159316.webp);
+  background-size: cover;
+  padding-top: 9.375rem;
+  padding-bottom: 6.25rem;
+}
+
+.header-text-holder {
+  color: #fff;
+  text-align: center;
+}
+
+.mySearch {
+  background-image: linear-gradient(to right, #ffcca2, #b388e2);
+}
+
+/***** Feature section *****/
+.feature {
+  background-color: #f5f5f5;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.feature-divider {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.feature-divider-line {
+  background-image: linear-gradient(to right, #ffcca2, #b388e2);
+  height: 0.0625rem;
+  margin-top: 0.1563rem;
+  margin-bottom: 0.1563rem;
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+/***** Online course section *****/
+.online-courses {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.online-courses-divider {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.online-course-divider-line {
+  background-image: linear-gradient(to right, #ffcca2, #b388e2);
+  height: 0.0625rem;
+  margin-top: 0.1563rem;
+  margin-bottom: 0.1563rem;
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.online-course-card-shadow {
+  box-shadow: 0.125rem 0.125rem 0.75rem rgb(0 0 0 / 30%) !important;
+  transition-duration: 0.5s;
+}
+
+/* ain't give the width attribute it will destroy the size in other dimensions */
+.online-course-card-pic {
+  /* width: 23rem; */
+  height: 10rem;
+  object-fit: cover;
+}
+
+/***** online training course section *****/
+.online-training-courses {
+  background-color: #f5f5f5;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.online-training-courses-divider {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.online-training-courses-divider-line {
+  background-image: linear-gradient(to right, #ffcca2, #b388e2);
+  height: 0.0625rem;
+  margin-top: 0.1563rem;
+  margin-bottom: 0.1563rem;
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.online-training-course-card-pic {
+  /* width: 23rem; */
+  height: 8rem;
+  object-fit: cover;
+}
+
+.online-training-courses-link,
+.online-training-courses-link:hover {
+  color: #000;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+/***** Review section *****/
+.review {
+  background-color: #ececec;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#review-content {
+  text-align: center;
+}
+
+.review-divider {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.review-divider-line {
+  background-image: linear-gradient(to right, #ffcca2, #b388e2);
+  height: 0.0625rem;
+  margin-top: 0.1563rem;
+  margin-bottom: 0.1563rem;
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.review-username-icon {
+  padding-top: 1rem;
+  width: 3rem;
+}
+
+/***** footer *****/
+.footer {
+  background-color: #000;
+  color: #f5f5f5;
+  padding-top: 2rem;
+}
+
+.footer a:link,
+.footer a:visited,
+.footer a:active {
+  text-decoration: none;
+  color: #f5f5f5;
+  padding-left: 0.3125rem;
+}
+
+.footer a:hover {
+  background-image: linear-gradient(to right, #ffcca2, #b388e2);
+}
+
+.footer li {
+  list-style-type: none;
+  padding-bottom: 0.5rem;
+}
+
+.bottom-headings {
+  background: linear-gradient(to right, #ffcca2, #b388e2);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+/***** copyright section *****/
+.copyright {
+  background-color: #000;
+  padding-top: 2rem;
+}
+.copyright-text {
+  background: linear-gradient(to right, #ffcca2, #b388e2);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+/***** About us section *****/
+.about-us {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about-us-form,
+.single-comment {
+  background-color: #feffd6;
+}
+
+.about-us-form-courses {
+  background-color: #feffd6;
+}
+
+.about-us-form-button,
+.single-comment-button {
+  background-color: #ea80fc;
+}
+
+/***** Contact section *****/
+.google-maps {
+  padding-top: 4.3rem;
+}
+
+.contact-us {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contact-us-table {
+  background-color: #81c784;
+}

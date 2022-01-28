@@ -1,0 +1,49 @@
+#myColors {
+  background-image: linear-gradient(
+    to right,
+    #dce1da,
+    #ffb9ab,
+    #ffcca2,
+    rgb(226, 175, 147),
+    #e2af93,
+    #7ed56f,
+    #55c57a,
+    #28b485,
+    #f44336,
+    #e91e63,
+    #9c27b0,
+    #673ab7,
+    #4caf50,
+    #8bc34a,
+    #ffeb3b,
+    #ffff00,
+    #00bcd4,
+    #009688,
+    #ffc107,
+    #333,
+    #ff9800,
+    #ff5722,
+    #9e9e9e,
+    #663399,
+    #dfaca8,
+    #b388e2,
+    #9575cd,
+    #efc476,
+    #f0768b,
+    #e57373,
+    #86b377,
+    #81c784,
+    #e9b260,
+    #ffd180,
+    #ed966b,
+    #ff9e80,
+    #feffd6,
+    #ffc3ad,
+    #d982ba,
+    #ea80fc
+  );
+}
+
+.leoBank {
+  background-image: linear-gradient(from top to bottom, #feffd6, #ffc3ad);
+}
